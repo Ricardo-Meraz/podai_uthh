@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida</title>
+    <link rel="stylesheet" href="/podai/style2.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/podai/imagenes/banner.jpg" alt="Logo UTHH">
+    </header>
+    <nav class="navbar">
+        <button class="menu-toggle" onclick="toggleMenu()">Menú</button>
+        <ul>
+            <li><a href="#">Cerrar sesión</a></li>
+            <li><a href="#">Datos de usuario</a></li>
+            <li><a href="#">Consultar mis calificaciones</a></li>
+            <li><a href="#">Entrevista inicial</a></li>
+            <li><a href="#">Pagos</a></li>
+            <li><a href="#">Agenda</a></li>
+        </ul>
+    </nav>
+    <main class="welcome-box">
+        <h2>Bienvenido</h2>
+        <p>ERICK EDUARDO HERNANDEZ HERNANDEZ</p>
+        <p>ALUMNO DEL 5to. CUATRIMESTRE, GRUPO C</p>
+        <p>ENERO-ABRIL 2025</p>
+    </main>
+    <footer class="footer">
+        <p>Carretera Huejutla - Chalahuiyapa S/N, C.P. 43000, Huejutla de Reyes, Hidalgo.</p>
+        <p>Teléfonos: 789 8962088 al 91</p>
+        <p>E-mail: rectoria@uthh.edu.mx</p>
+        <p>Universidad Tecnológica de la Huasteca Hidalguense</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar ul');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
